@@ -1,0 +1,21 @@
+Rebase and Squash
+
+1. Create another branch, e.g. test_branch (to perform rebase/squashing on later)
+2. Push 1 or 2 commits on branch 'main' (so that test_branch is behind origin/main)
+3. Push a few commits on test_branch
+4. Squash and Rebase test_branch to be up-to-date with origin/main
+
+Hint:
+- To squash multiple commits into 1 commit, you can use git rebase: 
+git rebase -i HEAD~<the-number-of-commits-to-squash-counting-from-HEAD> (example: git rebase -i HEAD~3)
+https://www.git-tower.com/learn/git/faq/git-squash
+- Rebase to be up-to-date with 'main': git rebase -i main
+
+Revert
+TBD
+
+Reset
+TBD
+
+Notes:
+- Read Git rebase vs interactive rebase (https://stackoverflow.com/questions/49626717/what-is-the-difference-between-interactive-rebase-and-normal-rebase)
